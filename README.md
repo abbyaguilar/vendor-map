@@ -257,21 +257,6 @@ Used for:
 
 ---
 
-# 📂 Current Project Structure
-
-```
-src/
-
-├── App.jsx
-├── firebase.js
-├── PhoneLogin.jsx
-├── Map.jsx
-├── CreateBusiness.jsx
-├── VendorDashboard.jsx
-```
-
----
-
 # 🌐 Deployment
 
 Current infrastructure:
