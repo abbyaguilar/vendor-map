@@ -1,0 +1,146 @@
+/* ---------- GLOBAL ---------- */
+
+:root {
+  font-family:
+    "SF Pro Display",
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+
+  color: #111827;
+  background: #f8fafc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- RESET ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* remove ugly blue tap highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: #111827;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  color: #64748b;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* ---------- BUTTONS ---------- */
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+button:active {
+  transform: scale(.98);
+}
+
+/* ---------- INPUTS ---------- */
+
+input,
+select,
+textarea {
+  border: none;
+  outline: none;
+}
+
+/* ---------- LINKS ---------- */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+/* Chrome/Safari */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* ---------- ROOT ---------- */
+
+#root {
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+/* ---------- NICE SELECTION ---------- */
+
+::selection {
+  background: rgba(17, 24, 39, .12);
+}
+
+/* ---------- IOS SAFE AREA ---------- */
+
+body {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* ---------- SMOOTH ---------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- OPTIONAL GLASS EFFECT ---------- */
+
+.glass {
+  background: rgba(255,255,255,.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
